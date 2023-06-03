@@ -4,27 +4,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2_obwod_kola
+namespace _3_bmi
 {
     class Program
     {
         static void Main(string[] args)
         {
-            double p, r, o;
+            double w, h, bmi;
 
-            p = inputValue();
-            r = Math.Sqrt( p/ Math.PI);
-            o =2 * Math.PI * r;
-            Console.WriteLine(o);
+            Console.Write("Waga[kg]: ");
+            w = inputValue();
+            Console.Write("Wzrost[m]: ");
+            h = inputValue();
+            bmi = w / Math.Pow(h,2);
+            Console.Write("BMI: " + bmi);
+            Console.ReadKey();
         }
-
         private static double inputValue()
         {
             double result;
-
             while (!double.TryParse(Console.ReadLine(), out result)) ;
-
             return result;
         }
     }
 }
+
