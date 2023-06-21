@@ -13,15 +13,20 @@ namespace _2_liczby_parzyste
             int n = 0;
 
             Console.WriteLine("Ile liczb parzystych wypisać?");
-            n = int.Parse(Console.ReadLine());
+            do
+            {
+                n = int.Parse(Console.ReadLine());
+            } while (!(n > 0));
 
-            PierwszaWersja(n);
-            //DrugaWersja(n);
+            Console.Write("\nLiczby parzyste: ");
+
+            //ZnajdzLiczbeParzystaA(n);
+            ZnajdzLiczbeParzystaB(n);
 
             Console.Read();
         }
         
-        static void PierwszaWersja(int n)
+        static void ZnajdzLiczbeParzystaA(int n)
         {
             Random random = new Random();
 
@@ -47,7 +52,7 @@ namespace _2_liczby_parzyste
             Console.WriteLine("\nLiczba wykonanych losowań: " + licznik);
         }
 
-        static void DrugaWersja(int n)
+        static void ZnajdzLiczbeParzystaB(int n)
         {
             Random random = new Random();
 

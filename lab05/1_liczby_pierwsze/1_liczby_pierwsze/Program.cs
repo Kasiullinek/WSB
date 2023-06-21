@@ -13,7 +13,10 @@ namespace _1_liczby_pierwsze
             int n = 0, licznik = 0, liczba = 2;
 
             Console.WriteLine("Ile liczb pierwszych wyświetlić?");
-            n = int.Parse(Console.ReadLine());
+            do
+            {
+                n = int.Parse(Console.ReadLine());
+            } while (!(n > 0));
 
             Console.Write("\nLiczby pierwsze: \n");
 

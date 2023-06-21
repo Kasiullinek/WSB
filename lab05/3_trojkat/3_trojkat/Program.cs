@@ -10,8 +10,14 @@ namespace _3_trojkat
     {
         static void Main(string[] args)
         {
+            int h = 0;
             Console.WriteLine("Jak wysoki trójkąt narysować?");
-            int h = int.Parse(Console.ReadLine());
+
+            do
+            {
+                h = int.Parse(Console.ReadLine());
+
+            } while (!(h > 0));
 
             int licznik = h;
 
