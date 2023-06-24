@@ -10,7 +10,14 @@ namespace _2_tablica_dwuwymiarowa_slimak
     {
         static void Main(string[] args)
         {
-            const int size = 10;
+            int size = 0;
+
+            do
+            {
+                Console.Write("Podaj rozmiar tablicy: ");
+                size = int.Parse(Console.ReadLine());
+
+            } while (size <= 0);
 
             int[,] array = new int[size, size];
 
@@ -85,7 +92,7 @@ namespace _2_tablica_dwuwymiarowa_slimak
                 }
             }
 
-            Console.WriteLine("Tablica {0} x {0}:", size);
+            Console.WriteLine("\nTablica {0} x {0}:", size);
 
             for (int i = 0; i < size; i++)
             {

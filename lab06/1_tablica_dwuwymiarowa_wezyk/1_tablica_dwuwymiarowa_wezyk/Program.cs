@@ -10,7 +10,14 @@ namespace _1_tablica_dwuwymiarowa_wezyk
     {
         static void Main(string[] args)
         {
-            int size = 10;
+            int size = 0;
+
+            do
+            {
+                Console.Write("Podaj rozmiar tablicy: ");
+                size = int.Parse(Console.ReadLine());
+
+            } while (size <= 0);
 
             int[,] array = new int[size, size];
 
@@ -45,7 +52,7 @@ namespace _1_tablica_dwuwymiarowa_wezyk
                 }
             }
 
-            Console.WriteLine("Tablica {0} x {0}: ", size);
+            Console.WriteLine("\nTablica {0} x {0}: ", size);
             for (int i = 0; i < size; i++)
             {
                 for(int j = 0; j < size; j++)
