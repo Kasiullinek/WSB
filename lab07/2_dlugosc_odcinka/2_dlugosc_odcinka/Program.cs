@@ -23,7 +23,7 @@ namespace _2_dlugosc_odcinka
 
             double length = CalculateLength(pX, pY, kX, kY);
 
-            Console.WriteLine("\nDługość odcinka od punktu A({0},{1}) do punktu B({2},{3}) wynosi: {4}", pX, pX, kX, kY, length);
+            Console.WriteLine("\nDługość odcinka od punktu A({0},{1}) do punktu B({2},{3}) wynosi: {4}", pX, pY, kX, kY, length);
 
             Console.Read();
         }
