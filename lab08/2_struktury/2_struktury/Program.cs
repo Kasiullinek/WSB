@@ -8,7 +8,7 @@ namespace _2_struktury
 {
     class Program
     {
-        public struct Student
+        struct Student
         {
             public string Imie;
             public string Nazwisko;
@@ -17,7 +17,7 @@ namespace _2_struktury
             public string Email;
         }
 
-        public struct Przedmiot
+        struct Przedmiot
         {
             public string Nazwa;
             public string Kod;
@@ -26,7 +26,7 @@ namespace _2_struktury
             public string Prowadzacy;
         }
 
-        public struct NauczycielAkademicki
+        struct NauczycielAkademicki
         {
             public string Imie;
             public string Nazwisko;
