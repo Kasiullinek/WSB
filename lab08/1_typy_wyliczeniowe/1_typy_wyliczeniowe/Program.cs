@@ -8,38 +8,38 @@ namespace _1_typy_wyliczeniowe
 {
     class Program
     {
-        public enum DniTygodnia
+        enum DniTygodnia
         {
-            Poniedziałek,
+            Poniedzialek,
             Wtorek,
-            Środa,
+            Sroda,
             Czwartek,
-            Piątek,
+            Piatek,
             Sobota,
             Niedziela,
         }
 
-        public enum EtapyPrania
+        enum EtapyPrania
         {
             Pranie,
-            Płukanie,
+            Plukanie,
             Wirowanie,
         }
 
-        public enum Posiłki
+        enum Posilki
         {
-            Śniadanie,
-            DrugieŚniadanie,
+            Sniadanie,
+            DrugieSniadanie,
             Obiad,
             Podwieczorek,
             Kolacja,
         }
 
-        public enum BierkiSzachowe
+        enum BierkiSzachowe
         {
-            Król,
+            Krol,
             Dama,
-            Wieża,
+            Wieza,
             Goniec,
             Skoczek,
             Pion,
